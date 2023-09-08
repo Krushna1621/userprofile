@@ -1,0 +1,50 @@
+.userProfiles {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .userProfiles h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .profileList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .profileCard {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    max-width: 300px;
+    min-width: 250px;
+  }
+  
+  .profileCard img {
+    max-width: 100%;
+    border-radius: 50%;
+  }
+  
+  .profileCard h2 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .profileCard p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  /* Media Query for Mobile View */
+  @media (max-width: 600px) {
+    .profileCard {
+      min-width: auto;
+    }
+  }
+  
