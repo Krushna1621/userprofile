@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './NavigationBar.module.css'; // Import the CSS module
+import styles from './NavigationBar.module.css'; 
 
 function NavigationBar() {
   return (

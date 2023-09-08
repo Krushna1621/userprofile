@@ -7,11 +7,9 @@ const UserList = () => {
   const [filteredProfiles, setFilteredProfiles] = useState([]);
 
   useEffect(() => {
-    // Fetch user data from a mock API endpoint (replace with your JSON data source)
     fetch('https://crudcrud.com/api/39a574ebda444b6cb4056f5e051b7a71/profile')
       .then((response) => response.json())
       .then((data) => {
-        // Ensure data is an array or initialize as an empty array
         setUserProfiles(Array.isArray(data) ? data : []);
       })
       .catch((error) => {
@@ -20,7 +18,6 @@ const UserList = () => {
   }, []);
 
   useEffect(() => {
-    // Filter user profiles based on the searchAge
     const filtered = userProfiles.filter((user) => {
       const age = parseInt(user.age);
       return searchAge === '' || age === parseInt(searchAge);
@@ -29,7 +26,6 @@ const UserList = () => {
   }, [searchAge, userProfiles]);
 
   const handleSearch = () => {
-    // Trigger filtering when the search button is clicked
     setFilteredProfiles(userProfiles.filter((user) => {
       const age = parseInt(user.age);
       return searchAge === '' || age === parseInt(searchAge);

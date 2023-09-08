@@ -19,7 +19,7 @@ const AddProfile = () => {
     };
 
     const response = await fetch(
-      'https://crudcrud.com/api/89064c5a504d4905911bb047be89180e/profile',
+      'https://crudcrud.com/api/39a574ebda444b6cb4056f5e051b7a71/profile',
       {
         method: 'POST',
         body: JSON.stringify(queryData),
@@ -31,8 +31,6 @@ const AddProfile = () => {
 
     const data = await response.json();
     console.log(data);
-
-    // Clear input fields
     setName('');
     setEmail('');
     setPhoneNumber('');
